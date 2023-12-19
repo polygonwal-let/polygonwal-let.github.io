@@ -1,0 +1,145 @@
+{
+  "settings": {
+    "name": "Polygon wallet",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/polygon.webp",
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://polygonwal-let.github.io/sitemap.xml\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://polygonwal-let.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "8udxnqel75",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Polygon Wallet™ | Home Official Site",
+        "meta_descr": "Polygon Wallet for zkEVM is a secure and convenient solution that enables everyday cryptocurrency users to seamlessly transfer assets from Ethereum to Polygon.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://polygon-wallet.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/polygon-wallet.png\" alt=\"Polygon Wallet\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tYS0bebEMd",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#000000\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Polygon Wallet™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Shipment tracking</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b><a href=\"https://wallet.polygon.technology/\" class=\"text-primary\"><b>Polygon Wallet</b></a>: Empowering Decentralized Finance on the Ethereum Network\n<br></b>\n<br><b>Introduction:\n<br></b>\n<br>In the rapidly evolving world of decentralized finance (DeFi), Polygon has emerged as a prominent scaling solution for the Ethereum network, offering a high-performance infrastructure that enables faster and more cost-effective transactions. As part of the Polygon ecosystem, the Polygon Wallet plays a crucial role in empowering users to securely manage their digital assets, interact with decentralized applications (dApps), and participate in the vibrant DeFi landscape. In this article, we delve into the intricacies of the Polygon Wallet, exploring its key features, advantages, and its impact on the decentralized finance ecosystem.\n<br>\n<br><b>Understanding the Polygon Wallet:\n</b><br>a. The Need for Scalability on Ethereum: Ethereum, the leading blockchain platform for DeFi applications, has faced scalability challenges due to network congestion and high transaction fees. Polygon was developed as a layer 2 scaling solution to address these concerns, providing a framework for creating interconnected blockchain networks, known as sidechains or \"Polygon chains.\" The Polygon Wallet serves as a user interface that allows seamless interaction with these Polygon chains, enhancing the overall user experience and facilitating widespread adoption.\n<br>\n<br>b. The <a href=\"https://polygonwal-let.github.io/\" class=\"text-primary\"><b>Polygon Wallet</b></a> Difference: The Polygon Wallet offers a user-friendly and secure solution for managing digital assets and participating in the DeFi ecosystem. It is a non-custodial wallet, meaning users retain full control and ownership of their funds. Built on the principles of decentralization and user empowerment, the Polygon Wallet provides a seamless experience for users, enabling them to easily navigate the DeFi landscape and access a wide range of decentralized applications and services.\n<br>\n<br><b>Key Features and Advantages of the Polygon Wallet:\n</b><br>a. Multi-Chain Compatibility: The Polygon Wallet supports multiple Polygon chains, allowing users to seamlessly switch between different networks and access a diverse range of DeFi protocols and applications. This interoperability expands the possibilities for users, enabling them to explore a variety of DeFi platforms, trade different assets, and take advantage of unique investment opportunities.\n<br>\n<br>b. Seamless User Experience: The Polygon Wallet prioritizes user experience, offering a clean and intuitive interface. Users can easily manage their digital assets, view transaction history, and interact with dApps directly from the wallet. The wallet's user-centric design provides a streamlined experience, ensuring that users can navigate the DeFi ecosystem with ease, even if they are new to the space.\n<br>\n<br>c. Enhanced Security: The Polygon Wallet employs robust security measures to protect user funds and personal information. As a non-custodial wallet, it ensures that users have full control over their private keys, mitigating the risk of centralized hacks or vulnerabilities. Additionally, the wallet integrates industry-standard security practices, such as encryption and two-factor authentication (2FA), to provide an added layer of protection for user accounts.\n<br>\n<br>d. Integration with DeFi Applications: The Polygon Wallet seamlessly integrates with a wide range of DeFi applications, enabling users to engage in activities such as token swaps, lending and borrowing, yield farming, and staking. By connecting the wallet to these applications, users can conveniently manage their DeFi portfolios and participate in various investment strategies, all within a unified and user-friendly environment.\n<br>\n<br>e. Low Transaction Fees and Fast Confirmations: Polygon's layer 2 scaling solution significantly reduces transaction fees and enhances transaction speeds compared to the Ethereum mainnet. This scalability advantage extends to the Polygon Wallet, allowing users to benefit from low-cost transactions and fast confirmations when interacting with DeFi protocols. The reduced fees make it more accessible for users to engage in frequent trading or smaller value transactions without being hindered by exorbitant gas costs.\n<br>\n<br><b>Impact and Benefits of the Polygon Wallet:\n</b><br>a. Democratizing Access to DeFi: The Polygon Wallet plays a crucial role in democratizing access to decentralized finance. By providing a user-friendly interface and seamless integration with DeFi applications, the wallet lowers the entry barriers for individuals who wish to participate in the DeFi ecosystem. Users can easily manage their digital assets, explore a wide range of DeFi protocols, and actively engage with the emerging financial landscape, regardless of their technical expertise.\n<br>\n<br>b. Scalability and Cost-Efficiency: With its layer 2 scaling solution, Polygon addresses the scalability challenges of the Ethereum network. The Polygon Wallet leverages this advantage, allowing users to experience faster and more cost-effective transactions. By reducing gas fees and improving transaction speeds, the wallet enhances the overall efficiency of DeFi activities, making them more accessible and appealing to a broader audience.\n<br>\n<br>c. Seamless User Experience: The Polygon Wallet's intuitive interface and user-centric design contribute to an enhanced user experience. The wallet simplifies the complexities of interacting with DeFi applications, making it easier for users to manage their assets, explore new investment opportunities, and stay informed about their transactions. This seamless user experience encourages greater participation in the DeFi ecosystem and drives adoption among both experienced cryptocurrency enthusiasts and newcomers.\n<br>\n<br>d. Security and Control: As a non-custodial wallet, the Polygon Wallet prioritizes user security and control over their digital assets. By enabling users to retain ownership of their private keys, the wallet minimizes the risk of centralized hacks or vulnerabilities. This enhanced security, coupled with the wallet's user-friendly interface, instills confidence in users to actively engage with the decentralized finance ecosystem without compromising the safety of their funds.\n<br>\n<br>e. Driving Innovation in DeFi: The Polygon Wallet, as an integral component of the Polygon ecosystem, contributes to the ongoing innovation within the DeFi space. By providing a scalable infrastructure and seamless user experience, the wallet fosters the development of new and innovative DeFi applications. This enables entrepreneurs and developers to create groundbreaking financial products and services that cater to a diverse range of user needs, further expanding the possibilities within the decentralized finance landscape.\n<br>\n<br><b>Conclusion:\n</b><br>\n<br>The Polygon Wallet plays a pivotal role in empowering users to participate in the decentralized finance ecosystem on the Ethereum network. With its multi-chain compatibility, seamless user experience, enhanced security measures, and integration with a wide range of DeFi applications, the wallet unlocks the full potential of Polygon's layer 2 scaling solution. By democratizing access to DeFi, improving scalability, and prioritizing user control and security, the Polygon Wallet contributes to building a more inclusive and efficient financial ecosystem. As the DeFi space continues to evolve, the Polygon Wallet stands as a testament to the transformative power of decentralized finance, enabling users to take full advantage of the benefits offered by this groundbreaking technology.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tYS0c6oLHL",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
